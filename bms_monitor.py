@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 #  CONFIG — reads from Railway env vars if set, else uses
 #  the hardcoded values below
 # ──────────────────────────────────────────────────────────
-BOT_TOKEN       = os.environ.get("BOT_TOKEN",       "8640561400:AAFdvFX70zsngNUEL7KOUDZ0d07pwgKwx68")
+BOT_TOKEN       = os.environ.get("BOT_TOKEN",       "88640561400:AAGoFl81jL6hxhEOVtrfAXpKu3mexjVT16g")
 CHAT_ID         = os.environ.get("CHAT_ID",         "410880894")
 SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY", "fa9c76457d22464e288691c75df8bc47")
 # ──────────────────────────────────────────────────────────

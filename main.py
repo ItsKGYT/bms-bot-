@@ -3,11 +3,11 @@ import time
 
 URL = "https://in.bookmyshow.com/cinemas/hyderabad/allu-cinemas-kokapet/ALUC"
 
-BOT_TOKEN = "8640561400:AAFDvFX70zsngNUEL7KOUDZod07pwgKwz68"
+BOT_TOKEN = "8640561400:AAFdvFX70zsngNUEL7KOUDZ0d07pwgKwx68"
 CHAT_ID = "410880894"
 
 def send_telegram():
-    message = "🎟 Tickets for March 21 are LIVE!\nhttps://in.bookmyshow.com/cinemas/hyderabad/allu-cinemas-kokapet/ALUC"
+    message = "✅ TEST: Telegram bot is working!\nRailway monitoring is active."
 
     requests.get(
         f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
@@ -17,21 +17,8 @@ def send_telegram():
         }
     )
 
-while True:
-    print("Checking page...")
+print("Testing Telegram notification...")
 
-    try:
-        r = requests.get(URL)
+send_telegram()
 
-        if "20" in r.text:
-            print("21 detected!")
-            send_telegram()
-            break
-
-        else:
-            print("21 not available")
-
-    except Exception as e:
-        print("Error:", e)
-
-    time.sleep(3)
+print("Test message sent. Bot will now exit.")

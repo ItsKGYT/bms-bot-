@@ -23,7 +23,7 @@ while True:
     try:
         r = requests.get(URL)
 
-        if "BookMyShow" in r.text:
+        if "20" in r.text:
             print("21 detected!")
             send_telegram()
             break

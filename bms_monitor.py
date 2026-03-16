@@ -16,7 +16,7 @@ SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY", "YOUR_SCRAPERAPI_KEY_HERE")
 
 TARGET_DATE    = "20260321"
 CINEMA_CODE    = "ALUC"
-CHECK_INTERVAL = 5  # seconds
+CHECK_INTERVAL = 20  # seconds
 
 PAGE_URL = (
     f"https://in.bookmyshow.com/cinemas/hyderabad/"

@@ -1,29 +1,3 @@
-"""
-╔══════════════════════════════════════════════════════════╗
-║   BookMyShow Ticket Monitor → Telegram   v3 (Railway)    ║
-╚══════════════════════════════════════════════════════════╝
-
-WHY THIS VERSION:
-  Railway runs on cloud/datacenter IPs — BMS blocks these with 403.
-  This version uses ScraperAPI (free tier) to route requests through
-  residential IPs that BMS won't block.
-
-SETUP:
-──────
-1. Get a FREE ScraperAPI key (5000 free requests/month):
-   → https://www.scraperapi.com/  (sign up, copy your API key)
-
-2. Set SCRAPER_API_KEY below (BOT_TOKEN + CHAT_ID already filled in)
-
-3. On Railway, set these as environment variables instead of hardcoding:
-   BOT_TOKEN, CHAT_ID, SCRAPER_API_KEY
-   (the script reads from env vars automatically if set)
-
-4. requirements.txt for Railway:
-   requests
-   beautifulsoup4
-"""
-
 import os
 import time
 import datetime
@@ -40,7 +14,7 @@ CHAT_ID         = os.environ.get("CHAT_ID",         "410880894")
 SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY", "YOUR_SCRAPERAPI_KEY_HERE")
 # ──────────────────────────────────────────────────────────
 
-TARGET_DATE    = "20260320"
+TARGET_DATE    = "20260321"
 CINEMA_CODE    = "ALUC"
 CHECK_INTERVAL = 5  # seconds
 

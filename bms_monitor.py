@@ -11,10 +11,10 @@ from bs4 import BeautifulSoup
 # ──────────────────────────────────────────────────────────
 BOT_TOKEN       = os.environ.get("BOT_TOKEN",       "8640561400:AAFdvFX70zsngNUEL7KOUDZ0d07pwgKwx68")
 CHAT_ID         = os.environ.get("CHAT_ID",         "410880894")
-SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY", "YOUR_SCRAPERAPI_KEY_HERE")
+SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY", "fa9c76457d22464e288691c75df8bc47")
 # ──────────────────────────────────────────────────────────
 
-TARGET_DATE    = "20260321"
+TARGET_DATE    = "20260320"
 CINEMA_CODE    = "ALUC"
 CHECK_INTERVAL = 5  # seconds
 

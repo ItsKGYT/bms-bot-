@@ -8,18 +8,21 @@ BOT_TOKEN = "8640561400:AAFdvFX70zsngNUEL7KOUDZ0d07pwgKwx68"
 CHAT_ID = "410880894"
 
 def send_telegram():
-    message = "🎟 Tickets for March 21 are LIVE!\n" + URL
+    message = "🎟 Tickets for March 21 are LIVE!\nhttps://in.bookmyshow.com/cinemas/hyderabad/allu-cinemas-kokapet/ALUC"
 
     requests.get(
         f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
-        params={"chat_id": CHAT_ID, "text": message},
+        params={
+            "chat_id": CHAT_ID,
+            "text": message
+        }
     )
 
 while True:
     print("Opening browser...")
 
     with sync_playwright() as p:
-        browser = p.chromium.launch()
+        browser = p.chromium.launch(args=["--no-sandbox"])
         page = browser.new_page()
 
         page.goto(URL)

@@ -3,8 +3,8 @@ import time
 
 URL = "https://in.bookmyshow.com/cinemas/hyderabad/allu-cinemas-kokapet/ALUC"
 
-BOT_TOKEN = "YOUR_BOT_TOKEN"
-CHAT_ID = "YOUR_CHAT_ID"
+BOT_TOKEN = "8640561400:AAFDvFX70zsngNUEL7KOUDZod07pwgKwz68"
+CHAT_ID = "410880894"
 
 def send_telegram():
     message = "🎟 Tickets for March 21 are LIVE!\nhttps://in.bookmyshow.com/cinemas/hyderabad/allu-cinemas-kokapet/ALUC"

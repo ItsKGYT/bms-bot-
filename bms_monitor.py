@@ -14,7 +14,7 @@ CHAT_ID         = os.environ.get("CHAT_ID",         "410880894")
 SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY", "fa9c76457d22464e288691c75df8bc47")
 # ──────────────────────────────────────────────────────────
  
-TARGET_DATE    = "20260320"
+TARGET_DATE    = "20260321"
 CINEMA_CODE    = "ALUC"
 CHECK_INTERVAL = 5  # seconds
  
